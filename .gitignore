@@ -6,9 +6,11 @@
 *.bin  # Ignore all .bin files
 file.bin  # Ignore a specific file named file.bin
 *.txt
-Fish_Logic/Library/Artifacts/03/0339da54feaf086457372ed0b0ce58a6
-
-
+Fuzzy Feud/Library/Artifacts/*
+Fuzzy Feud/Library/ShaderCache/builtin/unity_builtin_extra0000/*
+Fuzzy Feud/Library/ShaderCache/shader/ProfileAnalyzerShader493b/*
+Fuzzy Feud/Library/ShaderCache/shader/TMP_SDF Internal Editor9c44/*
+Fuzzy Feud/Library/Bee/CachedNodeOutput/*
 # Unity specific
 /[Ll]ibrary/
 /[Tt]emp/
