@@ -2,7 +2,6 @@
 *.dwlt
 *.log
 
-# .gitignore
 *.bin  # Ignore all .bin files
 file.bin  # Ignore a specific file named file.bin
 *.txt
