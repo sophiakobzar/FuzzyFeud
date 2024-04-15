@@ -1,3 +1,3 @@
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
-* filter=lfs diff=lfs merge=lfs -text
+version https://git-lfs.github.com/spec/v1
+oid sha256:51bd9b11dae7ae717f8e723b43f60913c4fa6a833107c990037d4879f9741409
+size 122
