@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea21a311f5727b10a34faa81f28c5b75c553c58591589802d3d7ea931f4197ec
-size 450
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Logic
+  - Gen
+  - objectToAvoid
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Furniture Layer
+  - Water
+  - UI
+  - player
+  - objectToAvoid
+  - floor
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d38b9f706107c5c7a18b680b51c3926d59ab6fc28ebf7db55b7d13a5658490c
-size 543
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FishScript : MonoBehaviour
+{
+    public LogicScript logic;
+    // Start is called before the first frame update
+    void Start()
+    {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        logic.addScore();
+        Destroy(gameObject);
+    }
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d65299a749c9c71a9a820727ab39bd3b2f4f92490ee98797039ec986bdbcf77
-size 273
+fileFormatVersion: 2
+guid: 5ccb6dbe807501c498e905276f812569
+labels:
+- Props
+- Environment
+- Plant
+- Decoration
+- Concrete
+- Interior
+- Nature
+- Spikes
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:635537d9f721f7052eb4391b026aca864d437819f1fbefb250056be786e1a13e
-size 528
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class LogicScript : MonoBehaviour
+{
+    public int playerScore;
+    public Text score;
+    public int num_Fish=0;
+    // Start is called before the first frame update
+    [ContextMenu("Increase Score")]
+    public void addScore()
+    {
+        playerScore++;
+        score.text = playerScore.ToString();
+    }
+    public void updateFFishNum(int num)
+    {
+        num_Fish = num_Fish + num;
+    }
+}

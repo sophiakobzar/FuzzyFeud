@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf466a8106f27dbf81c9c743442b450efad039c6c7982b30b7fd1c25dc657b23
-size 926
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Third_person_cat_move : MonoBehaviour
+{
+    public CharacterController controller;
+    public float speed = 8f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // left and right arrows
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        // up and down arrows
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(vertical, 0f, horizontal).normalized;
+
+        if(direction.magnitude >= 0.1f) {
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+            controller.Move(direction * speed * Time.deltaTime);
+
+        }
+    }
+}
