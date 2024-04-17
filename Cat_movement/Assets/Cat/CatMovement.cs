@@ -5,7 +5,11 @@ using UnityEngine;
 public class Third_person_cat_move : MonoBehaviour
 {
     public CharacterController controller;
+<<<<<<< HEAD
     public float speed = 8f;
+=======
+    public float speed = 6f;
+>>>>>>> 15700dc88321bbaafd96410bad25edef16d12830
 
     // Start is called before the first frame update
     void Start()
