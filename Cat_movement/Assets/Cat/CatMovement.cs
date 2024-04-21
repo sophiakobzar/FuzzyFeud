@@ -5,28 +5,36 @@ using UnityEngine;
 public class Third_person_cat_move : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 8f;
+    // speed of the character controlled by the player
+    public float speed = 8.0f;
 
     // Start is called before the first frame update
     void Start()
     {
 
     }
-
-    // Update is called once per frame
     void Update()
     {
-        // left and right arrows
+        // Get input from horizontal and vertical axes
         float horizontal = Input.GetAxisRaw("Horizontal");
-        // up and down arrows
         float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(vertical, 0f, horizontal).normalized;
 
-        if(direction.magnitude >= 0.1f) {
+        // Get the forward direction of the camera without vertical component
+        Vector3 cameraForward = Camera.main.transform.forward;
+        cameraForward.y = 0f;
+        cameraForward.Normalize();
+
+        // Calculation to make the direction of player align with the direction of the camera
+        Vector3 direction = (cameraForward * vertical + Camera.main.transform.right * horizontal).normalized;
+
+        if (direction.magnitude >= 0.1f)
+        {
+            // Calculate the target angle for rotation based on movement direction
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-            controller.Move(direction * speed * Time.deltaTime);
 
+            // Moves the player
+            controller.Move(direction * speed * Time.deltaTime);
         }
     }
 }
