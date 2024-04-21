@@ -107,7 +107,7 @@ public class Spawner : MonoBehaviour
     }
     bool GenerateFish(int x, int z)
     {
-        Vector3 fishPosition = new Vector3(x + 1, 0.1f, z + 1);
+        Vector3 fishPosition = new Vector3(x + 1, 3.0f, z + 1);
         //float radius = 0.5f; // Adjust this radius as needed
 
         // Use a layer mask for furniture if you've set up layers
