@@ -12,7 +12,7 @@ public class LogicScript : MonoBehaviour
     public void addScore()
     {
         playerScore++;
-        score.text = playerScore.ToString();
+        score.text = "Score: " + playerScore.ToString();
     }
     public void updateFFishNum(int num)
     {

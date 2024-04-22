@@ -17,9 +17,12 @@ public class FishScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        logic.addScore();
-        Destroy(gameObject);
+        if (other.CompareTag("Player")) {
+            logic.addScore();
+            Destroy(gameObject);
+        }
+        
     }
 }
