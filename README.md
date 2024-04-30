@@ -1,11 +1,12 @@
 # Fuzzy Feud Game
 
-Welcome to the Fuzzy Feud game repository! This document will guide you through the steps needed to set up the game on your local machine.
+Welcome to the Fuzzy Feud game repository! This README provides instructions on how to set up and play the game on your local machine.
 
 ## Prerequisites
 
+Before you begin, ensure you have the following installed on your machine:
+
 - Git
-- Git Large File Storage (LFS)
 
 ## Installation
 
@@ -13,20 +14,13 @@ Follow these steps to install and run the game:
 
 1. **Clone the repository**
 
-   Open your terminal and run the following command:
+   Open your terminal and run the following command to clone the repository:
 
-git clone https://github.com/sophiakobzar/FuzzyFeud.git
-
-
-2. **Pull from Git LFS**
-
-Navigate into the cloned repository and run the following command:
-
-git lfs pull
-
-
-3. **Run the game**
-
-Go into the `Playable Game` folder. Here, you will find the application for the game. Run the application to start playing Fuzzy Feud!
-
-Enjoy the game!
+   ```bash
+   git clone https://github.com/sophiakobzar/FuzzyFeud.git
+   
+2. Pull from Git LFS Navigate into the cloned repository and run the following command to pull the large files:
+  ```bash
+   cd FuzzyFeud
+  ```bash
+   git lfs pull
