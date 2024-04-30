@@ -10,7 +10,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Installation
 
-Follow these steps to install and run the game:
+Follow these steps to install the game code so you could open it in Unity:
 
 1. **Clone the repository**
 
@@ -18,11 +18,3 @@ Follow these steps to install and run the game:
 
    ```bash
    git clone https://github.com/sophiakobzar/FuzzyFeud.git
-   
-2. **Pull from Git LFS Navigate into the cloned repository and run the following command to pull the large files**
-   ```bash
-   cd FuzzyFeud
-   git lfs pull
-
-Run the game Go into the Playable Game folder. Here, you will find the application for the game. Run the application to start playing Fuzzy Feud!
-Enjoy the game and may the best player win!
