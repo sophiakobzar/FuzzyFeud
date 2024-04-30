@@ -22,5 +22,4 @@ Follow these steps to install and run the game:
 2. Pull from Git LFS Navigate into the cloned repository and run the following command to pull the large files:
   ```bash
    cd FuzzyFeud
-  ```bash
    git lfs pull
